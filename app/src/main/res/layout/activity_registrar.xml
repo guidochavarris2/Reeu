@@ -1,0 +1,305 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/page_registrar_ek1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="0dp"
+    android:layout_marginTop="0dp">
+
+    <View
+        android:id="@+id/_bg__registrar_ek2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/_bg__registrar_ek2_shape" />
+
+    <TextView
+        android:id="@+id/registro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/atras__2__1"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/registro_string"
+        android:textColor="@color/registro_color"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/ingrese_los_siguientes_datos_"
+        android:layout_width="208dp"
+        android:layout_height="27dp"
+        android:layout_below="@+id/registro"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/ingrese_los_siguientes_datos__string"
+        android:textColor="@color/registro_color"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/dni"
+        android:layout_width="55dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/ingrese_los_siguientes_datos_"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/dni_string"
+        android:textColor="@color/registro_color"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/nombre"
+        android:layout_width="93dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/group_46"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/nombre_string"
+        android:textColor="@color/registro_color"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/apellido"
+        android:layout_width="93dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/group_42"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/apellidos"
+        android:textColor="@color/registro_color"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/password"
+        android:layout_width="109dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/group_43"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/password_string"
+        android:textColor="@color/registro_color"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+
+    <RelativeLayout
+        android:id="@+id/group_40"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/group_44"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="20dp"
+        tools:layout_centerHorizontal="true">
+
+        <Button
+            android:id="@+id/_rectangle_4"
+            android:layout_width="290dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/_rectangle_4"
+            android:contentDescription="_rectangle_4"
+            android:text="@string/register"
+            android:textColor="@color/registro_color"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/group_43"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dni"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="10dp"
+        tools:layout_centerHorizontal="true">
+
+        <View
+            android:id="@+id/rectangle_2"
+            android:layout_width="290dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:alpha="0.10000000149012"
+            android:background="@drawable/rectangle_2_ek1_shape" />
+
+        <EditText
+            android:id="@+id/_99999999"
+            android:layout_width="271dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="15dp"
+            android:ems="10"
+            android:hint="@string/_99999999_string"
+            android:inputType="number"
+            android:textColor="@color/_99999999_color"
+            android:textColorHint="@color/_99999999_color"
+            android:textSize="18sp"
+            tools:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/group_42"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/password"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="10dp"
+        tools:layout_centerHorizontal="true">
+
+        <View
+            android:id="@+id/rectangle_3"
+            android:layout_width="290dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:alpha="0.10000000149012"
+            android:background="@drawable/rectangle_2_ek1_shape" />
+
+        <EditText
+            android:id="@+id/introduce_tu_contrase_a"
+            android:layout_width="271dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="15dp"
+            android:ems="10"
+            android:hint="@string/introduce_tu_contrase_a_string"
+            android:textColor="@color/_99999999_color"
+            android:textColorHint="@color/_99999999_color"
+            android:textSize="18sp"
+            tools:layout_centerHorizontal="true"
+            android:inputType="text"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/___ya_tienes_cuenta__inicia_sesi_n"
+        android:layout_width="225dp"
+        android:layout_height="27dp"
+        android:layout_below="@+id/group_40"
+        android:layout_marginLeft="72dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:text="@string/___ya_tienes_cuenta__inicia_sesi_n_string"
+        android:textColor="@color/registro_color"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        tools:layout_centerHorizontal="true" />
+
+
+    <RelativeLayout
+        android:id="@+id/group_44"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nombre"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="10dp"
+        tools:layout_centerHorizontal="true">
+
+        <View
+            android:id="@+id/rectangle_5"
+            android:layout_width="290dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:alpha="0.10000000149012"
+            android:background="@drawable/rectangle_2_ek1_shape" />
+
+        <EditText
+            android:id="@+id/pablito"
+            android:layout_width="271dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:hint="@string/ejemplo2_string"
+            android:textColor="@color/registro_color"
+            android:textColorHint="@color/registro_color"
+            android:textSize="18sp"
+            tools:layout_centerHorizontal="true"
+            android:inputType="text"
+            android:editable="false" />
+
+        <ImageView
+            android:id="@+id/vector"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="251dp"
+            android:layout_marginTop="12dp"
+            android:contentDescription="vector"
+            android:src="@drawable/vector" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/group_46"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/apellido"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="10dp"
+        tools:layout_centerHorizontal="true">
+
+        <View
+            android:id="@+id/rectangle_6"
+            android:layout_width="290dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:alpha="0.10000000149012"
+            android:background="@drawable/rectangle_2_ek1_shape" />
+
+        <EditText
+            android:id="@+id/apellidos"
+            android:layout_width="271dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:hint="@string/ejemplo_string"
+            android:textColor="@color/registro_color"
+            android:textColorHint="@color/registro_color"
+            android:textSize="18sp"
+            tools:layout_centerHorizontal="true"
+            android:inputType="text"
+            android:editable="false"/>
+
+        <ImageView
+            android:id="@+id/vector2"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="251dp"
+            android:layout_marginTop="12dp"
+            android:contentDescription="vector"
+            android:src="@drawable/vector" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/atras__2__1"
+        android:layout_width="57dp"
+        android:layout_height="45dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:contentDescription="atras__2__1"
+        android:src="@drawable/atras__2__1" />
+
+</RelativeLayout>

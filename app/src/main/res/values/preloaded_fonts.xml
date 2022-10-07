@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/</item>
+        <item>@font/abel</item>
+        <item>@font/inder</item>
+        <item>@font/inria_serif</item>
+        <item>@font/inria_serif_bold</item>
+        <item>@font/istok_web</item>
+    </array>
+</resources>

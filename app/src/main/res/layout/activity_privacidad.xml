@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="wrap_content" >
+    <!--
+    /*
+     *	This content is generated from the API File Info.
+     *	(Alt+Shift+Ctrl+I).
+     *
+     *	@desc
+     *	@file 		registrar
+     *	@date 		Saturday 01st of October 2022 11:18:15 AM
+     *	@title 		Espacio de trabajo
+     *	@author
+     *	@keywords
+     *	@generator 	Export Kit v1.3.figma
+     *
+     */
+    -->
+    <RelativeLayout android:id="@+id/privacidad"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout android:id="@+id/content_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+
+            <RelativeLayout android:id="@+id/page_privacidad_ek2"
+                android:layout_marginTop="0dp"
+                android:layout_marginStart="0dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <View   android:id="@+id/_bg__privacidad_ek3"
+                    android:background="@drawable/_bg__privacidad_ek3_shape"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="800dp" />
+
+
+                <RelativeLayout android:id="@+id/group_53"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginStart="0dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <ImageView android:id="@+id/rectangle_13_ek7"
+                        android:src="@drawable/rectangle_13_ek7"
+                        android:contentDescription="rectangle_13_ek7"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="66dp" />
+
+                    <TextView android:id="@+id/privacidad_ek4"
+                        android:textStyle="bold"
+                        android:textSize="28sp"
+                        android:textColor="@color/registro_color"
+                        android:layout_marginLeft="107dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_width="179dp"
+                        android:layout_height="54dp"
+                        android:text="@string/privacidad_ek4_string"
+                        />
+
+                </RelativeLayout>
+
+                <ImageView android:id="@+id/_atras__2__1_ek7"
+                    android:src="@drawable/_atras__2__1_ek7"
+                    android:contentDescription="_atras__2__1_ek7"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="57dp"
+                    android:layout_height="45dp" />
+
+                <TextView android:id="@+id/el_oeste_de_texas_divide_la_frontera_entre_mexico_y_nuevo_m_xico__es_muy_bella_pero_aspera__llena_de_cactus__en_esta_region_se_encuentran_las_davis_mountains__todo_el_terreno_esta_lleno_de_piedra_caliza__torcidos_arboles_de_mezquite_y_espinosos_nopales__para_admirar_la_verdadera_belleza_desertica__visite_el_parque_nacional_de_big_bend_el_oeste_de_texas_divide_la_frontera_entre_mexico_y_nuevo_m_xico__es_muy_bella_pero_aspera__llena_de_cactus__en_esta_region_se_encuentran_las_davis_mountains__todo_el_terreno_esta_lleno_de_piedra_caliza__torcidos_arboles_de_mezquite_y_espinosos_nopales__para_admirar_la_verdadera_belleza_desertica__visite_el_parque_nacional_de_big_bend_el_oeste_de_texas_divide_la_frontera_entre_mexico_y_nuevo_m_xico__es_muy_bella_pero_aspera__llena_de_cactus__en_esta_region_se_encuentran_las_davis_mountains__todo_el_terreno_esta_lleno_de_piedra_caliza__torcidos_arboles_de_mezquite_y_espinosos_nopales__para_admirar_la_verdadera_belleza_desertica__visite_el_parque_nacional_de_big_bend_ek1"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:textColor="@color/registro_color"
+                    android:layout_marginLeft="36dp"
+                    android:layout_marginTop="100dp"
+                    android:layout_width="339dp"
+                    android:layout_height="400dp"
+                    android:text="@string/el_oeste_de_texas_divide_la_frontera_entre_mexico_y_nuevo_m_xico__es_muy_bella_pero_aspera__llena_de_cactus__en_esta_region_se_encuentran_las_davis_mountains__todo_el_terreno_esta_lleno_de_piedra_caliza__torcidos_arboles_de_mezquite_y_espinosos_nopales__para_admirar_la_verdadera_belleza_desertica__visite_el_parque_nacional_de_big_bend_el_oeste_de_texas_divide_la_frontera_entre_mexico_y_nuevo_m_xico__es_muy_bella_pero_aspera__llena_de_cactus__en_esta_region_se_encuentran_las_davis_mountains__todo_el_terreno_esta_lleno_de_piedra_caliza__torcidos_arboles_de_mezquite_y_espinosos_nopales__para_admirar_la_verdadera_belleza_desertica__visite_el_parque_nacional_de_big_bend_el_oeste_de_texas_divide_la_frontera_entre_mexico_y_nuevo_m_xico__es_muy_bella_pero_aspera__llena_de_cactus__en_esta_region_se_encuentran_las_davis_mountains__todo_el_terreno_esta_lleno_de_piedra_caliza__torcidos_arboles_de_mezquite_y_espinosos_nopales__para_admirar_la_verdadera_belleza_desertica__visite_el_parque_nacional_de_big_bend_ek1_string"
+                    />
+
+
+                <RelativeLayout android:id="@+id/group_55_ek1"
+                    android:layout_marginTop="600dp"
+                    android:layout_marginStart="120dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <ImageView android:id="@+id/_rectangle_16_ek1"
+                        android:src="@drawable/_rectangle_16_ek1"
+                        android:contentDescription="_rectangle_16_ek1"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_width="160.5dp"
+                        android:layout_height="50dp" />
+
+                    <TextView android:id="@+id/aceptar_ek1"
+                        android:textStyle="bold"
+                        android:layout_gravity="center_horizontal|center"
+                        android:gravity="center"
+                        android:textSize="18sp"
+                        android:textColor="@color/registro_color"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_width="85dp"
+                        android:layout_height="35dp"
+                        android:text="@string/aceptar_ek1_string"
+                        />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+
+            <ImageView android:id="@+id/_inicio_ek8"
+                android:src="@drawable/_inicio_ek8"
+                android:contentDescription="_inicio_ek8"
+                android:layout_marginStart="-863dp"
+                android:layout_marginTop="-1148dp"
+                android:layout_width="360dp"
+                android:layout_height="800dp" />
+
+
+
+            <ImageView android:id="@+id/busqueda_creacion"
+                android:src="@drawable/busqueda_creacion"
+                android:contentDescription="busqueda_creacion"
+                android:layout_marginStart="-830dp"
+                android:layout_marginTop="651dp"
+                android:layout_width="360dp"
+                android:layout_height="800dp" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

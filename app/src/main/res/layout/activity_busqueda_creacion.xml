@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#9500FC"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:orientation="vertical"
+    tools:context=".Busqueda_creacion">
+
+    <RelativeLayout
+        android:id="@+id/group_48"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp">
+
+        <ImageView
+            android:id="@+id/rectangle_21_ek5"
+            android:layout_width="392dp"
+            android:layout_height="66dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:contentDescription="rectangle_21_ek3"
+            android:src="@drawable/rectangle_21_ek3" />
+
+        <TextView
+            android:id="@+id/c_digo_qr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="123dp"
+            android:layout_marginTop="16dp"
+            android:text="Nuevos Eventos"
+            android:textColor="@color/registro_color"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/atras2_3_ek1"
+            android:layout_width="49dp"
+            android:layout_height="47dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="12dp"
+            android:contentDescription="atras2_3_ek1"
+            android:src="@drawable/_atras__2__3_ek1" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_weight=".6"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/redondeado_cuadro_ui"
+        android:backgroundTint="@color/black"
+        >
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="245dp"
+            android:layout_marginLeft="260dp"
+            app:backgroundTint="@null"
+            android:background="@drawable/custom_butom_degradado"
+            android:text="Buscar" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="96dp"
+            app:srcCompat="@drawable/unsplash_0pn9naek5pc_ek8" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="100dp"
+            android:fontFamily="@font/abel"
+            android:text="BUSCAR"
+            android:textColor="@color/inicio_de_sesi_n_color"
+
+            android:textSize="38sp"
+            app:backgroundTint="@null" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="150dp"
+            android:fontFamily="@font/inria_serif"
+
+
+            android:text="Busca nuevos amigos"
+            android:textColor="#8371A1"
+            android:textSize="20sp" />
+
+        <View
+            android:id="@+id/rectangle_2_ek1"
+            android:layout_width="290dp"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="185dp"
+            android:alpha="0.10000000149012"
+            android:background="@drawable/rectangle_2_ek1_shape"
+            tools:layout_centerHorizontal="true" />
+
+        <EditText
+            android:id="@+id/_999999999"
+            android:layout_width="271dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="187dp"
+            android:ems="10"
+            android:hint="Ingresa un código"
+            android:inputType="number"
+            android:textColor="@color/_99999999_color"
+            android:textColorHint="@color/_99999999_color"
+            android:textSize="18sp"
+            tools:ignore="TouchTargetSizeCheck"
+            tools:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight=".99999">
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_weight=".6"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/redondeado_cuadro_ui"
+        android:backgroundTint="@color/black">
+
+        <TextView
+            android:id="@+id/textView33"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="100dp"
+            android:fontFamily="@font/abel"
+            android:text="CREAR"
+            android:textColor="@color/inicio_de_sesi_n_color"
+
+            android:textSize="38sp"
+            app:backgroundTint="@null" />
+
+        <TextView
+            android:id="@+id/textView44"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="150dp"
+            android:fontFamily="@font/inria_serif"
+
+
+            android:text="Vive una nueva experiencia"
+            android:textColor="#8371A1"
+            android:textSize="20sp" />
+
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="245dp"
+            android:layout_marginLeft="260dp"
+            app:backgroundTint="@null"
+            android:background="@drawable/custom_butom_degradado"
+            android:text="Crear" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="96dp"
+            app:srcCompat="@drawable/unsplash_0pn9naek5pc_ek8" />
+    </RelativeLayout>
+</LinearLayout>

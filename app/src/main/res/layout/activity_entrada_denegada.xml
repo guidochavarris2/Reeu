@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="wrap_content" >
+    <!--
+    /*
+     *	This content is generated from the API File Info.
+     *	(Alt+Shift+Ctrl+I).
+     *
+     *	@desc
+     *	@file 		registrar
+     *	@date 		Saturday 01st of October 2022 11:18:15 AM
+     *	@title 		Espacio de trabajo
+     *	@author
+     *	@keywords
+     *	@generator 	Export Kit v1.3.figma
+     *
+     */
+    -->
+    <RelativeLayout android:id="@+id/entrada_denegada"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout android:id="@+id/content_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+
+            <RelativeLayout android:id="@+id/page_entrada_denegada_ek1"
+                android:layout_marginTop="0dp"
+                android:layout_marginStart="0dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <View   android:id="@+id/_bg__entrada_denegada_ek2"
+                    android:background="@drawable/_bg__entrada_denegada_ek2_shape"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="800dp" />
+
+
+                <RelativeLayout android:id="@+id/group_55"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginStart="0dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <ImageView android:id="@+id/rectangle_13_ek5"
+                        android:src="@drawable/rectangle_13_ek5"
+                        android:contentDescription="rectangle_13_ek5"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="66dp" />
+
+                    <TextView android:id="@+id/verficaci_n_ek1"
+                        android:textStyle="bold"
+                        android:textSize="28sp"
+                        android:textColor="@color/registro_color"
+                        android:layout_marginLeft="101dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_width="191dp"
+                        android:layout_height="54dp"
+                        android:text="@string/verficaci_n_ek1_string"
+                        />
+
+                </RelativeLayout>
+
+                <ImageView android:id="@+id/_atras__2__1_ek5"
+                    android:src="@drawable/_atras__2__1_ek5"
+                    android:contentDescription="_atras__2__1_ek5"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="57dp"
+                    android:layout_height="45dp" />
+
+                <View   android:id="@+id/rectangle_20_ek2"
+                    android:background="@drawable/rectangle_20_ek2_shape"
+                    android:layout_marginStart="65dp"
+                    android:layout_marginTop="137dp"
+                    android:layout_width="290dp"
+                    android:layout_height="350dp" />
+
+                <View   android:id="@+id/rectangle_21_ek5"
+                    android:background="@drawable/rectangle_21_ek5_shape"
+                    android:layout_marginStart="110dp"
+                    android:layout_marginTop="192dp"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp" />
+
+                <ImageView android:id="@+id/____ek1"
+                    android:src="@drawable/____ek1"
+                    android:contentDescription="____ek1"
+                    android:layout_marginStart="185dp"
+                    android:layout_marginTop="509dp"
+                    android:layout_width="29dp"
+                    android:layout_height="48dp" />
+
+                <ImageView android:id="@+id/no_esta_en_lista"
+                    android:src="@drawable/no_esta_en_lista"
+                    android:contentDescription="no_esta_en_lista"
+                    android:layout_marginStart="88dp"
+                    android:layout_marginTop="609dp"
+                    android:layout_width="224dp"
+                    android:layout_height="36dp" />
+
+            </RelativeLayout>
+
+
+
+
+            <ImageView android:id="@+id/_inicio_ek8"
+                android:src="@drawable/_inicio_ek8"
+                android:contentDescription="_inicio_ek8"
+                android:layout_marginStart="-863dp"
+                android:layout_marginTop="-1148dp"
+                android:layout_width="360dp"
+                android:layout_height="800dp" />
+
+
+
+            <ImageView android:id="@+id/busqueda_creacion"
+                android:src="@drawable/busqueda_creacion"
+                android:contentDescription="busqueda_creacion"
+                android:layout_marginStart="-830dp"
+                android:layout_marginTop="651dp"
+                android:layout_width="360dp"
+                android:layout_height="800dp" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

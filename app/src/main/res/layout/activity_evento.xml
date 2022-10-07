@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/page_evento_ek1"
+    android:layout_marginTop="0dp"
+    android:layout_marginStart="0dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <View   android:id="@+id/bg_evento_ek2"
+        android:background="@drawable/_bg__evento_ek2_shape"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <Button
+        android:id="@+id/rectangle_4_ek1"
+        android:layout_width="290dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/csdfesfseff_efdasdasdads"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/_rectangle_4_ek1"
+        android:contentDescription="rectangle_4_ek1"
+        android:text="@string/ingresar_string"
+        android:textColor="@color/registro_color"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_centerHorizontal="true">
+
+        <ImageView
+            android:id="@+id/rectangle_13"
+            android:layout_width="397dp"
+            android:layout_height="66dp"
+            android:layout_marginTop="0dp"
+            android:contentDescription="rectangle_13"
+            android:src="@drawable/rectangle_13" />
+
+        <ImageView
+            android:id="@+id/atras2_1_ek1"
+            android:layout_width="57dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="11dp"
+            android:contentDescription="atras2_1_ek1"
+            android:src="@drawable/_atras__2__1_ek1" />
+
+        <TextView
+            android:id="@+id/fiesta_1"
+            android:layout_width="137dp"
+            android:layout_height="54dp"
+            android:layout_marginLeft="134dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/fiesta_1_string"
+            android:textColor="@color/registro_color"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/rectangle_14_ek1"
+        android:layout_width="360dp"
+        android:layout_height="220dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="76dp"
+        android:background="@drawable/rectangle_14_ek1_shape" />
+
+
+    <TextView
+        android:id="@+id/_20_583_participantes_9_000_vistas"
+        android:layout_width="176dp"
+        android:layout_height="19dp"
+        android:layout_below="@+id/rectangle_14_ek1"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="200dp"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="2dp"
+        android:text="@string/_20_583_participantes_9_000_vistas_string"
+        android:textColor="@color/registro_color" />
+
+    <ImageView
+        android:id="@+id/descripci_n_"
+        android:layout_width="124dp"
+        android:layout_height="24dp"
+        android:layout_below="@+id/_20_583_participantes_9_000_vistas"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="-4dp"
+        android:contentDescription="descripci_n_"
+        android:src="@drawable/descripci_n_" />
+
+    <ImageView
+        android:id="@+id/ubicacion_"
+        android:layout_width="84dp"
+        android:layout_height="19dp"
+        android:layout_below="@+id/_3123124_3424"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="10dp"
+        android:contentDescription="ubicacion_"
+        android:src="@drawable/ubicacion_" />
+
+    <ImageView
+        android:id="@+id/hora__fecha"
+        android:layout_width="108dp"
+        android:layout_height="19dp"
+        android:layout_below="@+id/descripci_n_"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="180dp"
+        android:contentDescription="hora__fecha"
+        android:src="@drawable/hora___fecha_" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/descripci_n_"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="5dp">
+
+        <View
+            android:id="@+id/rectangle_18"
+            android:layout_width="339dp"
+            android:layout_height="163dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:alpha="0.6700000166893"
+            android:background="@drawable/rectangle_18_shape" />
+
+        <TextView
+            android:id="@+id/el_oeste_de_texas_divide_la_frontera_entre_mexico_y_nuevo_m_xico_es_muy_bella_pero_asperallena_de_cactusen_esta_region_se_encuentran_las_davis_mountainstodo_el_terreno_esta_lleno_de_piedra_calizatorcidos_arboles_de_mezquite_y_espinosos_nopalespara_admirar_la_verdadera_belleza_desertica_visite_el_parque_nacional_de_big_bend"
+            android:layout_width="316dp"
+            android:layout_height="122dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="@string/el_oeste_de_texas_divide_la_frontera_entre_mexico_y_nuevo_m_xico__es_muy_bella_pero_aspera__llena_de_cactus__en_esta_region_se_encuentran_las_davis_mountains__todo_el_terreno_esta_lleno_de_piedra_caliza__torcidos_arboles_de_mezquite_y_espinosos_nopales__para_admirar_la_verdadera_belleza_desertica__visite_el_parque_nacional_de_big_bend_string"
+            android:textColor="@color/registro_color"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/_3123124_3424"
+        android:layout_width="117dp"
+        android:layout_height="27dp"
+        android:layout_below="@+id/hora__fecha"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="99dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/_3123124_3424_string"
+        android:textColor="@color/registro_color"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/csdfesfseff_efdasdasdads"
+        android:layout_width="196dp"
+        android:layout_height="27dp"
+        android:layout_below="@+id/ubicacion_"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="99dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/csdfesfseff_efdasdasdads_string"
+        android:textColor="@color/registro_color"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
