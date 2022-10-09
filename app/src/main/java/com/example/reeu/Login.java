@@ -1,80 +1,139 @@
 package com.example.reeu;
 
-import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.view.View;
-import android.widget.Button;
-import android.widget.ImageView;
-import android.widget.TextView;
+import android.widget.EditText;
+import android.widget.ProgressBar;
+import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import com.android.volley.AuthFailureError;
+import com.android.volley.Request;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.StringRequest;
+import org.json.JSONException;
+import org.json.JSONObject;
+import java.util.HashMap;
+import java.util.Map;
 
 public class Login extends AppCompatActivity {
-
-    private View _bg__login_ek2;
-    private TextView inicio_de_sesi_n;
-    private ImageView iniciar_con_tu_cuenta_de_reeu_;
-    private ImageView dni_ek1;
-    private ImageView password_ek1;
-    private ImageView rectangle_4_ek5;
-    private Button _rectangle_5_ek1;
-    private TextView inicia_sesi_n_ek1;
-    private View rectangle_3_ek1;
-    private TextView introduce_tu_contrase_a_ek1;
-    private TextView ___no_tienes_cuenta__registrate;
-    private View rectangle_2_ek1;
-    private TextView _999999999;
-    private ImageView vector_ek25;
-    private ImageView reeu_1;
-    private TextView __deja_que_tu_smartphone_sea_el_gerente_de_tu_evento_;
-
+    EditText etName, etPassword;
+    ProgressBar progressBar;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        inicio_de_sesi_n = (TextView) findViewById(R.id.inicio_de_sesi_n);
-        iniciar_con_tu_cuenta_de_reeu_ = (ImageView) findViewById(R.id.iniciar_con_tu_cuenta_de_reeu_);
-        dni_ek1 = (ImageView) findViewById(R.id.dni_ek1);
-        password_ek1 = (ImageView) findViewById(R.id.password_ek1);
-        //rectangle_4_ek5 = (ImageView) findViewById(R.id.rectangle_4_ek5);
-        _rectangle_5_ek1 = (Button) findViewById(R.id._rectangle_5_ek1);
-        //inicia_sesi_n_ek1 = (TextView) findViewById(R.id.inicia_sesi_n_ek1);
-        rectangle_3_ek1 = (View) findViewById(R.id.rectangle_3_ek1);
-        introduce_tu_contrase_a_ek1 = (TextView) findViewById(R.id.introduce_tu_contrase_a_ek1);
-        ___no_tienes_cuenta__registrate = (TextView) findViewById(R.id.___no_tienes_cuenta__registrate);
-        rectangle_2_ek1 = (View) findViewById(R.id.rectangle_2_ek1);
-        _999999999 = (TextView) findViewById(R.id._999999999);
-        //vector_ek25 = (ImageView) findViewById(R.id.vector_ek25);
-        reeu_1 = (ImageView) findViewById(R.id.reeu_1);
-        __deja_que_tu_smartphone_sea_el_gerente_de_tu_evento_ = (TextView) findViewById(R.id.__deja_que_tu_smartphone_sea_el_gerente_de_tu_evento_);
+        if (SharedPrefManager.getInstance(this).isLoggedIn()) {
+            finish();
+            startActivity(new Intent(this, MainActivity.class));
+        }
+
+        progressBar = findViewById(R.id.progressBar);
+        etName = findViewById(R.id.etUserName);
+        etPassword = findViewById(R.id.etUserPassword);
 
 
-        _rectangle_5_ek1.setOnClickListener(new View.OnClickListener() {
 
-            public void onClick(View v) {
-
-                Intent nextScreen = new Intent(getApplicationContext(), Home.class);
-                startActivity(nextScreen);
-
-
+        //calling the method userLogin() for login the user
+        findViewById(R.id.btnLogin).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                userLogin();
             }
         });
 
-
-        ___no_tienes_cuenta__registrate.setOnClickListener(new View.OnClickListener() {
-
-            public void onClick(View v) {
-
-                Intent nextScreen = new Intent(getApplicationContext(), Registrar.class);
-                startActivity(nextScreen);
-
-
+        //if user presses on textview not register calling RegisterActivity
+        findViewById(R.id.tvRegister).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+                startActivity(new Intent(getApplicationContext(), Register.class));
             }
         });
+    }
 
+    private void userLogin() {
+        //first getting the values
+        final String username = etName.getText().toString();
+        final String password = etPassword.getText().toString();
+        //validating inputs
+        if (TextUtils.isEmpty(username)) {
+            etName.setError("Please enter your username");
+            etName.requestFocus();
+            return;
+        }
 
-        //custom code goes here
+        if (TextUtils.isEmpty(password)) {
+            etPassword.setError("Please enter your password");
+            etPassword.requestFocus();
+            return;
+        }
 
+        //if everything is fine
+        StringRequest stringRequest = new StringRequest(Request.Method.POST, URLs.URL_LOGIN,
+                new Response.Listener<String>() {
+                    @Override
+                    public void onResponse(String response) {
+                        progressBar.setVisibility(View.GONE);
+
+                        try {
+                            //converting response to json object
+                            JSONObject obj = new JSONObject(response);
+
+                            //if no error in response
+                            if (!obj.getBoolean("error")) {
+                                Toast.makeText(getApplicationContext(), obj.getString("message"), Toast.LENGTH_SHORT).show();
+
+                                //getting the user from the response
+                                JSONObject userJson = obj.getJSONObject("user");
+
+                                //creating a new user object
+                                User user = new User(
+                                        userJson.getInt("id"),
+                                        userJson.getString("username"),
+                                        userJson.getString("apellidos"),
+                                        userJson.getString("email"),
+                                        userJson.getString("dni"),
+                                        userJson.getString("gender")
+                                );
+
+                                //storing the user in shared preferences
+                                SharedPrefManager.getInstance(getApplicationContext()).userLogin(user);
+                                //starting the profile activity
+                                finish();
+                                startActivity(new Intent(getApplicationContext(), resultado.class));
+                            } else {
+                                Toast.makeText(getApplicationContext(), obj.getString("message"), Toast.LENGTH_SHORT).show();
+                            }
+                        } catch (JSONException e) {
+                            e.printStackTrace();
+                        }
+                    }
+                },
+                new Response.ErrorListener() {
+                    @Override
+                    public void onErrorResponse(VolleyError error) {
+                        Toast.makeText(getApplicationContext(), error.getMessage(), Toast.LENGTH_SHORT).show();
+
+                    }
+                })
+        {
+            @Override
+            protected Map<String, String> getParams() throws AuthFailureError {
+                Map<String, String> params = new HashMap<>();
+                params.put("username", username);
+                params.put("password", password);
+                return params;
+            }
+        };
+
+        VolleySingleton.getInstance(this).addToRequestQueue(stringRequest);
     }
 }

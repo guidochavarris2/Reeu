@@ -90,7 +90,7 @@
             tools:layout_centerHorizontal="true">
 
             <Button
-                android:id="@+id/_rectangle_5_ek1"
+                android:id="@+id/btnLogin"
                 android:layout_width="290dp"
                 android:layout_height="50dp"
                 android:layout_marginStart="0dp"
@@ -125,7 +125,7 @@
                 android:background="@drawable/rectangle_2_ek1_shape" />
 
             <EditText
-                android:id="@+id/introduce_tu_contrase_a_ek1"
+                android:id="@+id/etUserPassword"
                 android:layout_width="276dp"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
@@ -141,7 +141,7 @@
         </RelativeLayout>
 
         <TextView
-            android:id="@+id/___no_tienes_cuenta__registrate"
+            android:id="@+id/tvRegister"
             android:layout_width="213dp"
             android:layout_height="27dp"
             android:layout_below="@+id/group_41"
@@ -180,7 +180,7 @@
                 tools:layout_centerHorizontal="true" />
 
             <EditText
-                android:id="@+id/_999999999"
+                android:id="@+id/etUserName"
                 android:layout_width="271dp"
                 android:layout_height="wrap_content"
                 android:layout_alignParentTop="true"
@@ -188,7 +188,7 @@
                 android:layout_marginTop="0dp"
                 android:ems="10"
                 android:hint="@string/_999999999_string"
-                android:inputType="number"
+                android:inputType="text"
                 android:textColor="@color/_99999999_color"
                 android:textColorHint="@color/_99999999_color"
                 android:textSize="18sp"
@@ -224,7 +224,25 @@
             android:textSize="20sp"
             android:textStyle="bold" />
 
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:visibility="gone"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.456" />
+
     </RelativeLayout>
+
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
