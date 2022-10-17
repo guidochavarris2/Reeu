@@ -1,84 +1,125 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content" >
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
 
-
-    <RelativeLayout android:id="@+id/content_container"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
 
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Welcome to Profile"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
 
-        <RelativeLayout android:id="@+id/page_welcome_ek1"
-            android:layout_marginTop="0dp"
-            android:layout_marginStart="0dp"
+        <TableLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            >
-
-            <View
-                android:id="@+id/_bg__welcome_ek2"
-                android:layout_marginStart="0dp"
-                android:layout_marginTop="0dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
-
-            <ImageView
-                android:id="@+id/unsplash_kdpm1on9jfs"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="0dp"
-                android:layout_marginTop="0dp"
-                android:contentDescription="unsplash_kdpm1on9jfs"
-                android:src="@drawable/festibal" />
+            android:layout_marginTop="50dp">
 
 
+            <TableRow>
 
-            <ImageView
-                android:id="@+id/reeu_1"
-                android:layout_width="336dp"
-                android:layout_height="192dp"
-                android:layout_marginStart="35dp"
-                android:layout_marginTop="284dp"
-                android:contentDescription="reeu_1"
-                android:src="@drawable/logo_reeu_rosa" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="Id"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
 
-            <TextView
-                android:id="@+id/textView"
-                android:layout_width="373dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="35dp"
-                android:layout_marginTop="454dp"
-                android:layout_marginEnd="35dp"
-                android:fontFamily="@font/istok_web"
-                android:text="¡Deja que tu smartphone sea el gerente de tu evento!"
-                android:textColor="@color/colorAccent"
-                android:textSize="24sp"
-                android:textStyle="bold"
+                <TextView
+                    android:id="@+id/textViewId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="id"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
 
-                />
+            </TableRow>
 
-            <Button
-                android:id="@+id/botom_portada"
-                android:layout_marginStart="65dp"
-                android:layout_marginTop="630dp"
-                android:layout_width="290dp"
-                android:layout_height="50dp"
-                android:text="Ingresar"
-                android:textSize="18dp"
-                app:backgroundTint="@null"
-                android:background="@drawable/custom_butom_degradado"
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="Username"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+
+                <TextView
+                    android:id="@+id/textViewUsername"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="username"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="Email"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+
+                <TextView
+                    android:id="@+id/textViewEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="useremail"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="Gender"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+
+                <TextView
+                    android:id="@+id/textViewGender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="gender"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+
+            </TableRow>
 
 
-                />
+        </TableLayout>
 
-
-        </RelativeLayout>
-
-
-    </RelativeLayout>
+        <Button
+            android:id="@+id/buttonLogout"
+            android:layout_width="210dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="150dp"
+            android:layout_marginLeft="75dp"
+            android:text="Logout" />
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

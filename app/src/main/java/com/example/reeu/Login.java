@@ -105,10 +105,10 @@ public class Login extends AppCompatActivity {
                                 );
 
                                 //storing the user in shared preferences
-                                SharedPrefManager.getInstance(getApplicationContext()).userLogin(user);
+                                //SharedPrefManager.getInstance(getApplicationContext()).userLogin(user);
                                 //starting the profile activity
-                                finish();
-                                startActivity(new Intent(getApplicationContext(), resultado.class));
+                                //finish();
+                                startActivity(new Intent(getApplicationContext(), Home.class));
                             } else {
                                 Toast.makeText(getApplicationContext(), obj.getString("message"), Toast.LENGTH_SHORT).show();
                             }

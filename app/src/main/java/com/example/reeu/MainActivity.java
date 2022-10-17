@@ -1,48 +1,46 @@
 package com.example.reeu;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
+
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ImageView;
 import android.widget.TextView;
 
-public class MainActivity extends AppCompatActivity {
+import androidx.appcompat.app.AppCompatActivity;
 
-    private View _bg__welcome_ek2;
-    private ImageView unsplash_kdpm1on9jfs;
-    private Button botom_portada;
-    private TextView comenzar;
-    private ImageView reeu_1;
+public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 
-
+    TextView id,userName,userEmail,gender;
+    Button btnLogout;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        if(SharedPrefManager.getInstance(this).isLoggedIn()){
+            id = findViewById(R.id.textViewId);
+            userName = findViewById(R.id.textViewUsername);
+            userEmail = findViewById(R.id.textViewEmail);
+            gender = findViewById(R.id.textViewGender);
+            btnLogout = findViewById(R.id.buttonLogout);
+            User user = SharedPrefManager.getInstance(this).getUser();
 
-        _bg__welcome_ek2 = (View) findViewById(R.id._bg__welcome_ek2);
-        unsplash_kdpm1on9jfs = (ImageView) findViewById(R.id.unsplash_kdpm1on9jfs);
-        botom_portada = (Button) findViewById(R.id.botom_portada);
-        //comenzar = (TextView) findViewById(R.id.comenzar);
-        reeu_1 = (ImageView) findViewById(R.id.reeu_1);
+            id.setText(String.valueOf(user.getId()));
+            userEmail.setText(user.getEmail());
+            gender.setText(user.getGender());
+            userName.setText(user.getName());
 
-
-        botom_portada.setOnClickListener(new View.OnClickListener() {
-
-            public void onClick(View v) {
-
-                Intent nextScreen = new Intent(getApplicationContext(), Login.class);
-                startActivity(nextScreen);
-
-
-            }
-        });
-
-
-        //custom code goes here
-
+            btnLogout.setOnClickListener(this);
+        }
+        else{
+            Intent  intent = new Intent(MainActivity.this,Login.class);
+            startActivity(intent);
+            finish();
+        }
+    }
+    public void onClick(View view){
+        if(view.equals(btnLogout)){
+            SharedPrefManager.getInstance(getApplicationContext()).logout();
+        }
     }
 }

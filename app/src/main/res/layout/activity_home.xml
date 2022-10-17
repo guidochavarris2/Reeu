@@ -150,62 +150,20 @@
                 android:text="Logout" />
         </RelativeLayout>
     </RelativeLayout>
-    <RelativeLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="90dp">
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_marginTop="70dp"
 
-        <ImageView
-            android:id="@+id/unsplash_0pn9naek5pc_ek4"
-            android:layout_width="349dp"
-            android:layout_height="86dp"
-            android:layout_marginStart="6dp"
-            android:contentDescription="unsplash_0pn9naek5pc_ek4"
-            android:src="@drawable/unsplash_0pn9naek5pc_ek4" />
+        android:layout_height="573dp">
 
-        <TextView
-            android:id="@+id/fiesta_ek4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginStart="46dp"
-            android:layout_marginLeft="46dp"
-            android:layout_marginTop="10dp"
-            android:text="@string/fiesta_ek4_string"
-            android:textColor="@color/registro_color"
-            android:textSize="16sp"
-            android:textStyle="bold" />
+        <ListView
+            android:id="@+id/lisMostrar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
 
-        <TextView
-            android:id="@+id/entrada__09_09_2022_ek4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginStart="46dp"
-            android:layout_marginLeft="46dp"
-            android:layout_marginTop="30dp"
-            android:text="@string/entrada__09_09_2022_ek4_string"
-            android:textColor="@color/registro_color"
-            android:textSize="14sp" />
 
-        <TextView
-            android:id="@+id/hora_13_00_p_m__ek4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginStart="46dp"
-            android:layout_marginLeft="46dp"
-            android:layout_marginTop="50dp"
-            android:text="@string/hora_13_00_p_m__ek4_string"
-            android:textColor="@color/registro_color"
-            android:textSize="14sp" />
-
-    </RelativeLayout>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
 
 
     <RelativeLayout

@@ -16,6 +16,13 @@
         android:theme="@style/Theme.Reeu"
         tools:targetApi="31">
         <activity
+            android:name=".bienvenida"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".resultado"
             android:exported="false">
             <meta-data
@@ -142,14 +149,14 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".Login"
+            android:name=".MainActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".MainActivity"
+            android:name=".Login"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
