@@ -38,7 +38,8 @@
             android:layout_marginBottom="8dp"
             android:editable="false"
             android:hint="Username"
-            android:inputType="text" />
+            android:inputType="text"
+            android:text="GUIDO2" />
 
         <EditText
             android:id="@+id/editTextApellidos"
@@ -46,9 +47,10 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:layout_marginBottom="8dp"
-            android:hint="Apellidos"
             android:editable="false"
-            android:inputType="text" />
+            android:hint="Apellidos"
+            android:inputType="text"
+            android:text="LUCANA LOPEZ" />
 
         <EditText
             android:id="@+id/editTextEmail"
