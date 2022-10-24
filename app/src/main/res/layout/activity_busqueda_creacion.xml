@@ -60,7 +60,7 @@
         >
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/btnBuscar"
             android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="245dp"
@@ -76,19 +76,6 @@
             app:srcCompat="@drawable/unsplash_0pn9naek5pc_ek8" />
 
         <TextView
-            android:id="@+id/textView2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="100dp"
-            android:fontFamily="@font/abel"
-            android:text="BUSCAR"
-            android:textColor="@color/inicio_de_sesi_n_color"
-
-            android:textSize="38sp"
-            app:backgroundTint="@null" />
-
-        <TextView
             android:id="@+id/textView3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -97,7 +84,7 @@
             android:fontFamily="@font/inria_serif"
 
 
-            android:text="Busca nuevos amigos"
+            android:text="Busca tus eventos"
             android:textColor="#8371A1"
             android:textSize="20sp" />
 
@@ -113,7 +100,7 @@
             tools:layout_centerHorizontal="true" />
 
         <EditText
-            android:id="@+id/_999999999"
+            android:id="@+id/edtcodigo"
             android:layout_width="271dp"
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
@@ -121,7 +108,7 @@
             android:layout_marginTop="187dp"
             android:ems="10"
             android:hint="Ingresa un código"
-            android:inputType="number"
+            android:inputType="textPersonName"
             android:textColor="@color/_99999999_color"
             android:textColorHint="@color/_99999999_color"
             android:textSize="18sp"
@@ -145,47 +132,49 @@
         android:background="@drawable/redondeado_cuadro_ui"
         android:backgroundTint="@color/black">
 
-        <TextView
-            android:id="@+id/textView33"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="100dp"
-            android:fontFamily="@font/abel"
-            android:text="CREAR"
-            android:textColor="@color/inicio_de_sesi_n_color"
-
-            android:textSize="38sp"
-            app:backgroundTint="@null" />
-
-        <TextView
-            android:id="@+id/textView44"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="150dp"
-            android:fontFamily="@font/inria_serif"
-
-
-            android:text="Vive una nueva experiencia"
-            android:textColor="#8371A1"
-            android:textSize="20sp" />
-
-
-        <Button
-            android:id="@+id/button3"
-            android:layout_width="100dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="245dp"
-            android:layout_marginLeft="260dp"
-            app:backgroundTint="@null"
-            android:background="@drawable/custom_butom_degradado"
-            android:text="Crear" />
-
-        <ImageView
-            android:id="@+id/imageView2"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="96dp"
-            app:srcCompat="@drawable/unsplash_0pn9naek5pc_ek8" />
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/edtEvento"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="evento"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/_99999999_color"
+                    android:textColorHint="@color/_99999999_color"
+                    android:minHeight="48dp" />
+
+                <EditText
+                    android:id="@+id/edtDescripcion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="descripcion"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/_99999999_color"
+                    android:textColorHint="@color/_99999999_color"
+                    android:minHeight="48dp" />
+
+                <EditText
+                    android:id="@+id/edtFecha"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="fecha"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/_99999999_color"
+                    android:textColorHint="@color/_99999999_color"
+                    android:minHeight="48dp" />
+            </LinearLayout>
+        </LinearLayout>
     </RelativeLayout>
 </LinearLayout>
