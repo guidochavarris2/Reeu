@@ -39,7 +39,7 @@ public class Busqueda_creacion extends AppCompatActivity {
         btnBuscar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                buscarEvento("{ingresar tu link}"+edtCodigo.getText()+"");
+                buscarEvento("{tu link}"+edtCodigo.getText()+"");
             }
         });
     }
@@ -52,9 +52,9 @@ public class Busqueda_creacion extends AppCompatActivity {
                 for (int i= 0; i < response.length(); i++) {
                     try {
                         jsonObject = response.getJSONObject(i);
-                        edtEvento.setText(jsonObject.getString("{ingresar tu atributo}"));
-                        edtDescripcion.setText(jsonObject.getString("{ingresar tu atributo}"));
-                        edtFecha.setText(jsonObject.getString("{ingresar tu atributo}"));
+                        edtEvento.setText(jsonObject.getString("{tu atributo}"));
+                        edtDescripcion.setText(jsonObject.getString("{tu atributo}"));
+                        edtFecha.setText(jsonObject.getString("{tu atributo}"));
                     } catch (JSONException e) {
                         Toast.makeText(getApplicationContext(), e.getMessage(), Toast.LENGTH_SHORT).show();
                     }
